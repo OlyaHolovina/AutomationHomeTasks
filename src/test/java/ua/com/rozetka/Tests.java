@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import ua.com.rozetka.pages.Basket;
 import ua.com.rozetka.pages.HomePage;
 import ua.com.rozetka.pages.LogIn;
+
 import java.net.MalformedURLException;
 
 public class Tests {
@@ -54,7 +55,7 @@ public class Tests {
     }
 
     @Test
-    public void addTheItemToTheBasket(){
+    public void addTheItemToTheBasket() {
         basket = new Basket(driver);
         basket.PointOverElement(basket.ALCOHOLICBEVER);
         basket.ClickWineCategory();
